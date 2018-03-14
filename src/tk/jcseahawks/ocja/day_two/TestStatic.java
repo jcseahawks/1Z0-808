@@ -1,4 +1,4 @@
-package tk.jcseahawks.day_two;
+package tk.jcseahawks.ocja.day_two;
 
 import java.lang.Integer;
 

@@ -1,4 +1,4 @@
-package tk.jcseahawks.day_two;
+package tk.jcseahawks.ocja.day_two;
 
 //order needs to be followed so static import wouldn't compile
 import static java.lang.System.out;

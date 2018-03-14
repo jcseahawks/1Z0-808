@@ -1,5 +1,5 @@
 //package declaration comes first
-package day_one;
+package tk.jcseahawks.day_one;
 
 //then comes import if there are any
 

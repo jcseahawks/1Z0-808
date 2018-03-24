@@ -166,7 +166,7 @@ This is meant to be a 40 days learning streak with a commit per day
 * `MyEnum.values()` returns an array of `MyEnum`'s values
 ## Chapter One SELF TEST
 1. Which are true?(Choose all that apply.)
-  A. `X extends Y` is correct if and only if and only if X is and Y is an interface
-  B. <strong>`X extends Y` is correct if and only if X is an interface and Y is a class</strong>
-  C. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
-  D. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces
+  1. `X extends Y` is correct if and only if and only if X is and Y is an interface
+  1. <strong>`X extends Y` is correct if and only if X is an interface and Y is a class</strong>
+  1. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
+  1. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces

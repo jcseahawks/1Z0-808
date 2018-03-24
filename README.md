@@ -35,9 +35,9 @@ This is meant to be a 40 days learning streak with a commit per day
 * No naming restrictions on source files with non-public classes
 ### Class Access Modifiers
 * There are three access modifiers:
-..* public
-..* protected
-..* private
+..1. public
+..1. protected
+..1. private
 
 
 

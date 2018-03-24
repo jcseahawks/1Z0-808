@@ -38,7 +38,7 @@ This is meant to be a 40 days learning streak with a commit per day
   * `public`
   * `protected`
   * `private`
-* There four access levels:
+* There are four access levels:
   * `public`
   * `protected`
   * `default`
@@ -78,5 +78,24 @@ This is meant to be a 40 days learning streak with a commit per day
 * Interfaces can extend one or more other interfaces
 * Interfaces can not extend a class or implement a class or interface
 * When taking the exam, verify legal interface and class declaration before verifying code logic
-
+### Member Access Modifiers
+* Members can use all four access modifiers
+* Member access comes in two forms:
+  * Code in one class can access a member of another class
+  * A subclass can inherit a member of its superclass
+* If a class can't be accessed its members won't be
+* When taking the exam, verify class visibility before member visibility
+* `public` members can be accessed by all other classes, even in other packages
+* If a superclass member is `public`, the subclass inherits it regardless of package
+* Members accessed without (.) operator must belong to the same class
+* `this` always refers to currently executing object
+* `this.aMethod()` is the same as just invoking directly `aMethod()`
+* `private` members can be accessed only by code in the same class
+* `private` members are not visible to subclasses, so `private` members cannot be inherited
+* `default` and `protected` members differ only by when subclasses are involved:
+  * `default` members can be accessed only by classes in the same package
+  * `protected` members can be accessed by other classes in  the same package, plus subclasses, regardless of package
+  * `protected` = package + kids (kids meaning subclasses)
+  * For subclasses outside the package, the `protected` member can be accessed only through inheritence; a subclass outside the package cannot access a `protected` member by using a reference to a superclass instance.
+  * A `protected` member inherited by a subclass from another package is not accessible to any other class in the subclass package, except for the the subclass's own subclasses
 

@@ -164,4 +164,9 @@ This is meant to be a 40 days learning streak with a commit per day
 * The semicolon at the end of an `enum` declaration is optional. These are legal:
   * `enum Foo { ONE, TWO, THREE } enum Foo { ONE, TWO, THREE };`
 * `MyEnum.values()` returns an array of `MyEnum`'s values
-
+## Chapter One SELF TEST
+1. Which are true?(Choose all that apply.)
+  A. `X extends Y` is correct if and only if and only if X is and Y is an interface
+  B. <strong>`X extends Y` is correct if and only if X is an interface and Y is a class</strong>
+  C. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
+  D. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces

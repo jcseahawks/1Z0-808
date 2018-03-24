@@ -116,4 +116,30 @@ This is meant to be a 40 days learning streak with a commit per day
 * `abstract` methods must be implemented by a subclass, so they must be inheritable, hence `abstract` methods cannot be `private` nor `final`
 * The `native` modifier applies only to methods
 * The `strictfp` modifier applies to classes and methods only
-
+### Methods with var-args
+* Methods can declare a parameter that accepts from zero to many arguments, a so-called var-arg method
+* A var-arg parameter is declared with the syntax `type... name`; for instance:
+  * `doStuff(int... x){}`
+* A var-arg method can have only one var-arg parameter
+* In methods with normal parameters and var-arg, the var-arg must come last
+### Constructors
+* Constructors must have the same name as the class
+* Constructors can have arguments, but they cannot have a return type
+* Constructors can use any access modifier(even private!)
+### Variable Declarations
+* Instance variables can:
+  * Have any access control
+  * Be marked `final` or `transient`
+* Instance variables can't be:
+  * `abstract`
+  * `synchronized`
+  * `native`
+  * `strictfp`
+* A local variable can have the same name as an instance variable; this is called "shadowing"
+* `final` variables have the following properties:
+  * Cannot be reassigned once assigned a value
+  * `final` reference variables cannot refer to a different object once the object has been assigned to the `final` variable
+  * `final` variables must be initialized before the constructor completes
+* There is no such thing as a `final` object only a `final` reference, the object can change
+* The `transient` modifier applies only to instance variables (only makes sense during serialization)
+* The `volatile` modifier applies only to instance variables

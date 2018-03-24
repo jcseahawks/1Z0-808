@@ -1,6 +1,6 @@
 # Oracle Certification Java Associate 1Z0-808 Exam Preparation
 This is meant to be a 40 days learning streak with a commit per day
-## Chapter 1 Two-Minute Drill
+## Chapter One Two-Minute Drill
 ### Java Features and Benefits
 * Support for object-oriented programming model
 * Encapsulation

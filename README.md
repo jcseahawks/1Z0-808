@@ -98,4 +98,22 @@ This is meant to be a 40 days learning streak with a commit per day
   * `protected` = package + kids (kids meaning subclasses)
   * For subclasses outside the package, the `protected` member can be accessed only through inheritence; a subclass outside the package cannot access a `protected` member by using a reference to a superclass instance.
   * A `protected` member inherited by a subclass from another package is not accessible to any other class in the subclass package, except for the the subclass's own subclasses
+### Local Variables
+* Local variables cannot have access modifiers
+* `final` is the only modifier available to local variables
+* Local variables must be initialized before use as they don't get default values
+### Other Members Modifiers
+* `final` methods cannot be overriden in a subclass
+* `abstract` methods are declared with a signature, return type, and an optional throws clause, but they are not implemented
+* `abstract` methods end in a semicolon
+* Three ways to spot an nonabstract method:
+  * The method is not marked `abstract`
+  * The method has curly braces
+  * The method <strong>MIGHT</strong> have code between the curly braces
+* The first concrete class to extend an `abstract` class must implement all of the abstract class's `abstract` methods
+* The `synchronized` modifier applies only to methods and code blocks only
+* `synchornized` methods can have any access control and can also be marked `final`
+* `abstract` methods must be implemented by a subclass, so they must be inheritable, hence `abstract` methods cannot be `private` nor `final`
+* The `native` modifier applies only to methods
+* The `strictfp` modifier applies to classes and methods only
 

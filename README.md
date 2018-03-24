@@ -167,6 +167,6 @@ This is meant to be a 40 days learning streak with a commit per day
 ## Chapter One SELF TEST
 * Which are true? (Choose all that apply.)
   * `X extends Y` is correct if and only if and only if X is and Y is an interface
-  *  <strong>`X extends Y` is correct if and only if X is an interface and Y is a class</strong>
+  * `X extends Y` is correct if and only if X is an interface and Y is a class
   *  <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
   *  `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces

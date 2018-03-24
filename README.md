@@ -35,9 +35,48 @@ This is meant to be a 40 days learning streak with a commit per day
 * No naming restrictions on source files with non-public classes
 ### Class Access Modifiers
 * There are three access modifiers:
-  * public
-  * protected
-  * private
-
+  * `public`
+  * `protected`
+  * `private`
+* There four access levels:
+  * `public`
+  * `protected`
+  * `default`
+  * `private`
+* Outer classes can only be `default` and `public`
+* A `default` class can only be seen by other classes in the same package
+* A `public` class can be seen by all the universe
+* Class visibility means:
+  * Other classes can instatiate it
+  * Other classes can extend it
+  * Other can access it's members(methods and variables)
+### Nonaccess Class Modifiers
+* Classes can also be modified with:
+  * `final`
+  * `abstract`
+  * `strictfp`
+* A class cannot be both `final`(can't be subclassed) and `abstract`(can be subclassed but can't be instatiated)
+* A single `abstract` method in a class means the whole class must be `abstract`
+* An `abstract` class can have both abstract and nonabstract methods
+* There is no minimum abstract method restriction for abstract classes
+* The first concrete class to extend an abstract class must implement all of it abstract methods
+### Interface Implementation
+* Usually interfaces are contracts for what a class can do, without detailing how to do it
+* Interfaces can be implemented by any class from any inheritence tree
+* Interfaces are `abstract` implicitily and allow explicit `abstract` modifier too
+* Usually interfaces have only `abstract` methods
+* Interface methods are implicitly `public` and usually `abstract` but explicit modifiers are also allowed
+* Interfaces can have constants, which are always implicitly `public`, `static`, `final` explicit declaration is also allowed in any combianation
+* As of Java 8, interfaces can have static or default methods these must:
+  * Provide concrete implementations
+  * Follow all legal override rules for methods they implement
+  * Not declare any new  or broader checked exceptions for an implementation method, runtime exceptions may be declared
+  * Maintain the exact signature and return type of the method it implements; no need to declare the exception of the implemented interface
+* A class implementing an interface can itself be `abstract`
+* An `abstract` implementing class does not have to implement the interface methods
+* A class can implement multiple interfaces
+* Interfaces can extend one or more other interfaces
+* Interfaces can not extend a class or implement a class or interface
+* When taking the exam, verify legal interface and class declaration before verifying code logic
 
 

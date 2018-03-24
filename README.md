@@ -36,8 +36,8 @@ This is meant to be a 40 days learning streak with a commit per day
 ### Class Access Modifiers
 * There are three access modifiers:
   1. public
-  1. protected
-  1. private
+  2. protected
+  3. private
 
 
 

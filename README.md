@@ -112,7 +112,7 @@ This is meant to be a 40 days learning streak with a commit per day
   * The method <strong>MIGHT</strong> have code between the curly braces
 * The first concrete class to extend an `abstract` class must implement all of the abstract class's `abstract` methods
 * The `synchronized` modifier applies only to methods and code blocks only
-* `synchornized` methods can have any access control and can also be marked `final`
+* `synchronized` methods can have any access control and can also be marked `final`
 * `abstract` methods must be implemented by a subclass, so they must be inheritable, hence `abstract` methods cannot be `private` nor `final`
 * The `native` modifier applies only to methods
 * The `strictfp` modifier applies to classes and methods only
@@ -143,3 +143,25 @@ This is meant to be a 40 days learning streak with a commit per day
 * There is no such thing as a `final` object only a `final` reference, the object can change
 * The `transient` modifier applies only to instance variables (only makes sense during serialization)
 * The `volatile` modifier applies only to instance variables
+### Array Declarations
+* Arrays can hold primitives or objects, but arrays are themeselves objects
+* Brackets can be either on the left or the right of the variable at declaration
+* It is never legal to include the size of an array in the declaration
+* An array of objects holds elements of the same type or subclass of the declared type
+### Static Variables and Methods
+* They are not tied to any particular instance of a class
+* No class instances are needed in order to use `static` members of the class or interface
+* `static` methods do not have direct access to nonstatic members; a class instance must be created in order to access them
+### enums
+* An `enum` specifies a list of constants values assigned to a type
+* An `enum` is a kind of a custom data type
+* An `enum` constant's type is the `enum` type
+* An `enum` can be declared outside or inside a class <strong>NOT</strong> in a method
+* `enum`'s can contain constructors, methods, variables, and constant-specific class bodies
+* `enum` constants can send arguments to the `enum` constructor
+* `enum` constructors can have arguments and can be overloaded
+* `enum` constructors can <strong>NEVER</strong> be invoked directly in code. They are always called automatically when an enum is initialized
+* The semicolon at the end of an `enum` declaration is optional. These are legal:
+  * `enum Foo { ONE, TWO, THREE } enum Foo { ONE, TWO, THREE };`
+* `MyEnum.values()` returns an array of `MyEnum`'s values
+

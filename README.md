@@ -185,6 +185,7 @@ This is meant to be a 40 days learning streak with a commit per day
       }  
       private void blastOff() { System.out.print("sh-bang "); }  
     }`  
+
     Which are true? (Choose all that apply.)
       1. As the code stands, the output is bang
       2. <strong>As the code stands, the output is sh-bang</strong>

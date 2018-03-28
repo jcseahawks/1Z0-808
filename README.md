@@ -172,31 +172,20 @@ This is meant to be a 40 days learning streak with a commit per day
     4. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces
 2. Given: 
 
-   `class Rocket {
-
+    class Rocket {
        private void blastOff() { System.out.print("bang "); } 
-
     } 
 
     public class Shuttle extends Rocket { 
-
         public static void main(String[] args) {
-
         new Shuttle().go();
-
-      } 
-
+        } 
         void go() { 
-
           blastOff();
-
 	  //Rocket.blastOff(); // line A
-
         }  
-
         private void blastOff() { System.out.print("sh-bang "); } 
-
-     }`    
+     }    
 
     Which are true? (Choose all that apply.)
       1. As the code stands, the output is bang

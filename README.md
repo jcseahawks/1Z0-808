@@ -171,23 +171,23 @@ This is meant to be a 40 days learning streak with a commit per day
     3. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
     4. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces
 2. Given:
-     `class Rocket {
-       private void blastOff() { System.out.print("bang "); }
+   `class Rocket {
+      private void blastOff() { System.out.print("bang "); }
+    }
+    public class Shuttle extends Rocket {
+      public static void main(String[] args) {
+        new Shuttle().go();
       }
-      public class Shuttle extends Rocket {
-        public static void main(String[] args) {
-          new Shuttle().go();
-        }
-        void go() {
+      void go() {
           blastOff();
 	  // Rocket.blastOff(); // line A
-        }
-        private void blastOff() { System.out.print("sh-bang "); }
-      }`
-      Which are true? (Choose all that apply.)
-       1. As the code stands, the output is bang
-       2. <strong>As the code stands, the output is sh-bang</strong>
-       3. As the code stands, compilation fails
-       4. If line A is uncommented, the output is bang bang
-       5. If line A is uncommented, the output is sh-bang bang
-       6. <strong>If line A is uncommented, compilation fails</strong>
+      }
+      private void blastOff() { System.out.print("sh-bang "); }
+    }`
+    Which are true? (Choose all that apply.)
+      1. As the code stands, the output is bang
+      2. <strong>As the code stands, the output is sh-bang</strong>
+      3. As the code stands, compilation fails
+      4. If line A is uncommented, the output is bang bang
+      5. If line A is uncommented, the output is sh-bang bang
+      6. <strong>If line A is uncommented, compilation fails</strong>

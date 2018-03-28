@@ -171,6 +171,7 @@ This is meant to be a 40 days learning streak with a commit per day
     3. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
     4. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces
 2. Given: 
+
    `class Rocket {
       private void blastOff() { System.out.print("bang "); }
     }

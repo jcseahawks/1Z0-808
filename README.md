@@ -177,6 +177,7 @@ This is meant to be a 40 days learning streak with a commit per day
       private void blastOff() { System.out.print("bang "); } 
 
     } 
+
     public class Shuttle extends Rocket { 
 
       public static void main(String[] args) {

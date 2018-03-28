@@ -174,29 +174,29 @@ This is meant to be a 40 days learning streak with a commit per day
 
     class Rocket {
 
-      private void blastOff() { System.out.print("bang "); } 
+       private void blastOff() { System.out.print("bang "); } 
 
     } 
 
     public class Shuttle extends Rocket { 
 
-      public static void main(String[] args) {
+        public static void main(String[] args) {
 
         new Shuttle().go();
 
       } 
 
-      void go() { 
+        void go() { 
 
           blastOff();
 
 	  // Rocket.blastOff(); // line A
 
-      }  
+        }  
 
-      private void blastOff() { System.out.print("sh-bang "); } 
+        private void blastOff() { System.out.print("sh-bang "); } 
 
-    }    
+     }    
 
     Which are true? (Choose all that apply.)
       1. As the code stands, the output is bang

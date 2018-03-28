@@ -165,7 +165,7 @@ This is meant to be a 40 days learning streak with a commit per day
   * `enum Foo { ONE, TWO, THREE } enum Foo { ONE, TWO, THREE };`
 * `MyEnum.values()` returns an array of `MyEnum`'s values
 ## Chapter One SELF TEST
-* Which are true? (Choose all that apply.)
+1. Which are true? (Choose all that apply.)
   * `X extends Y` is correct if and only if and only if X is and Y is an interface
   * `X extends Y` is correct if and only if X is an interface and Y is a class
   *  <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>

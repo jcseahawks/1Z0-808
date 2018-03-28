@@ -187,7 +187,7 @@ This is meant to be a 40 days learning streak with a commit per day
         void go() { 
           blastOff();
 	  //Rocket.blastOff(); // line A
-         }
+        }
 
         private void blastOff() { System.out.print("sh-bang "); } 
      }    

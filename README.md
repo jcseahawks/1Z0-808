@@ -200,6 +200,7 @@ This is meant to be a 40 days learning streak with a commit per day
       5. If line A is uncommented, the output is sh-bang bang
       6. <strong>If line A is uncommented, compilation fails</strong>
 3. Given that the for loop's syntax is correct, and given:
+  
   import static java.lang.System.\*;
   class _ {
     static public void main(String[] __A_V_) {   

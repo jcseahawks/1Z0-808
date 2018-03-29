@@ -217,3 +217,15 @@ This is meant to be a 40 days learning streak with a commit per day
      5. _-A.
      6. Compilation fails
      7. An exception is thrown at runtime
+4. Given: 
+       1. enum Animals {
+       2.    DOG("woof"), CAT("meow"), FISH("burble");
+       3.    String sound;
+       4.    Animals(String s) { sound = s; }
+       5. }
+       6. class TestEnum {
+       7.     static Animals a;
+       8.     public static void main(String[] args) {
+       9.         System.out.println(a.DOG.sound + " " + a.FISH.sound);
+       10.    }
+       11. }

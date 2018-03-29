@@ -207,7 +207,7 @@ This is meant to be a 40 days learning streak with a commit per day
            String $ = "";
            for (int x=0; ++x < __A_V_.length;)  // for loop
 	         $ += __A_V_[x];
-	        out.println($);   
+	       out.println($);   
           } 
        }
 

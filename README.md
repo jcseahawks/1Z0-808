@@ -230,3 +230,12 @@ This is meant to be a 40 days learning streak with a commit per day
        9.         System.out.println(a.DOG.sound + " " + a.FISH.sound);
        10.    }
        11. }
+
+   What is the result? (Choose all that apply.)
+
+   1. ** woof burble **
+   2. Multiple compilation errors
+   3. Compilation fails due to an error on line 2
+   4. Compilation fails due to an error on line 3
+   5. Compilation fails due to an error on line 4
+   6. Compilation fails due to an error on line 9

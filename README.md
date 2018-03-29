@@ -218,6 +218,7 @@ This is meant to be a 40 days learning streak with a commit per day
      6. Compilation fails
      7. An exception is thrown at runtime
 4. Given: 
+
        1. enum Animals {
        2.    DOG("woof"), CAT("meow"), FISH("burble");
        3.    String sound;

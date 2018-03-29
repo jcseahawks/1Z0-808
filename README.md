@@ -233,7 +233,7 @@ This is meant to be a 40 days learning streak with a commit per day
 
    What is the result? (Choose all that apply.)
 
-   1. ** woof burble **
+   1. **woof burble**
    2. Multiple compilation errors
    3. Compilation fails due to an error on line 2
    4. Compilation fails due to an error on line 3

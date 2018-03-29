@@ -202,7 +202,7 @@ This is meant to be a 40 days learning streak with a commit per day
       6. <strong>If line A is uncommented, compilation fails</strong>
 3. Given that the for loop's syntax is correct, and given:
 
-    `import static java.lang.System.*;
+     import static java.lang.System.*;
      class _ {
         static public void main(String[] __A_V_) {
 	   String $ = "";
@@ -210,7 +210,7 @@ This is meant to be a 40 days learning streak with a commit per day
 	       $ += __A_V_[x];
 	   out.println($);    
 	}
-     }`
+     }
 
    And the command line:
 

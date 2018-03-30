@@ -325,5 +325,24 @@ This is meant to be a 40 days learning streak with a commit per day
    4. Compilation fails due to an error on line 4
    5. Compilation fails due to an error on line 6
    6. Compilation fails due to an error on line 8
-   7, Compilation fails due to an error on line 9
+   7. Compilation fails due to an error on line 9
+9. Given: 
+
+       4. public class Frodo extends Hobbit {
+       5.     public static void main(String[] args) {
+       6.         int myGold = 7;
+       7.         System.out.println(countGold(myGold, 6));
+       8.     }
+       9.  }
+       10. class Hobbit {
+       11.     int countGold(int x, int y) { return x + y; }
+       12. }
+
+   What is the result?
+
+   1. 13
+   2. Compilation fails due to multiple errors
+   3. Compilation fails due to an error on line 6
+   4. **Compilation fails due to an error on line 7**
+   5. Compilation fails due to an error on line 11
 

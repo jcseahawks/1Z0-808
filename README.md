@@ -345,7 +345,7 @@ This is meant to be a 40 days learning streak with a commit per day
    3. Compilation fails due to an error on line 6
    4. **Compilation fails due to an error on line 7**
    5. Compilation fails due to an error on line 11
-1. Given:
+10. Given:
 
        interface Gadget {
            void doStuff()

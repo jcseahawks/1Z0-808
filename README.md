@@ -255,9 +255,9 @@ This is meant to be a 40 days learning streak with a commit per day
        7.         Foo f = new Foo();
        8.         System.out.print(" " + f.a);
        9.         System.out.print(" " + f.b);
-      10.         System.out.println(" " + f.c);
-      11.     }
-      12. }
+       10.        System.out.println(" " + f.c);
+       11.     }
+       12. }
 
    What is the result? (Choose all that apply.)
 

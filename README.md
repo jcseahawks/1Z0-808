@@ -399,12 +399,12 @@ This is meant to be a 40 days learning streak with a commit per day
 
     Which lines of code--inserted independently at <i>insert code here</i>--will compile? (Choose all that apply.)
 
-    1.     **public static m1() {;}**
-    2.     **default void m2(){;}**
-    3.     **abstract int m3();** 
-    4.     final short m4() { return 5;}
-    5.     default long m5();
-    6.     **static void m6() {;}**
+    1. **public static m1() {;}**
+    2. **default void m2(){;}**
+    3. **abstract int m3();** 
+    4. final short m4() { return 5;}
+    5. default long m5();
+    6. **static void m6() {;}**
 
 
 

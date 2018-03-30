@@ -374,7 +374,7 @@ This is meant to be a 40 days learning streak with a commit per day
 
       ```
       1. // insert code here
-      2. class StartTest {
+      2. class StatTest {
       3.     public static void main(String[] args) {
       4.         System.out.println(Integer.MAX_VALUE);
       5.     }

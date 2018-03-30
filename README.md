@@ -168,7 +168,7 @@ This is meant to be a 40 days learning streak with a commit per day
 1. Which are true? (Choose all that apply.)
     1. `X extends Y` is correct if and only if and only if X is and Y is an interface
     2. `X extends Y` is correct if and only if X is an interface and Y is a class
-    3. <strong>`X extends Y` is correct if X and Y are either both classes or both interfaces</strong>
+    3. **`X extends Y` is correct if X and Y are either both classes or both interfaces**
     4. `X extends Y` is correct for all combinations of X and Y being classes and/or interfaces
 2. Given: 
 
@@ -267,4 +267,24 @@ This is meant to be a 40 days learning streak with a commit per day
    4. **Compilation fails with an error on line 8**
    5. **Compilation fails with an error on line 9**
    6. Compilation fails with an error on line 10
+6. Given:
+
+       1. public class Electronic implements Device
+       2.     { public void doIt() { } }
+       3. abstract class Phone1 extends Electronic { }
+       4. 
+       5. abstract class Phone2 extends Electronic 
+       6.     { public void doIt(int x) { } }
+       7. class Phone3 extends Electronic implements Device 
+       8.     { public void doStuff() { } }
+       9. interface Device { public void doIt(); }
+
+   What is the result? (Choose all that apply.)    
+
+   1. **Compilation succeeds**
+   2. Compilation fails with an error on line 1
+   3. Compilation fails with an error on line 3
+   4. Compilation fails with an error on line 5
+   5. Compilation fails with an error on line 7
+   6. Compilation fails with an error on line 9
 

@@ -370,5 +370,16 @@ This is meant to be a 40 days learning streak with a commit per day
     3. The output will be <i>plug in show book</i>
     4. The abstract class Electronic will NOT compile
     5. The class Tablet CANNOT both extend and implement
+11. Given that the Integer class is in java.lang package and given:
+
+      ```
+      1. // insert code here
+      2. class StartTest {
+      3.     public static void main(String[] args) {
+      4.         System.out.println(Integer.MAX_VALUE);
+      5.     }
+      6. }
+      ```
+
 
 

@@ -389,6 +389,13 @@ This is meant to be a 40 days learning streak with a commit per day
     4. static import java.lang.Integer.*;
     5. **import static java.lang.Integer.MAX_VALUE;**
     6. None of the above statements are valid import syntax
+12. Given:
+
+   ```
+   interface MyInterface {
+       // insert code here
+   }
+   ```
 
 
 

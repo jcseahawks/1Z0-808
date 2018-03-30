@@ -347,21 +347,19 @@ This is meant to be a 40 days learning streak with a commit per day
    5. Compilation fails due to an error on line 11
 10. Given:
 
-        ```java
-	interface Gadget {
-       	    void doStuff();
+        interface Gadget {
+       	  void doStuff();
         }
 	abstract class Electronic {
-	    void getPower() { System.out.print("plug in "); }
+	  void getPower() { System.out.print("plug in "); }
 	}
 	public class Tablet extends Electronic implements Gadget {
-	    void doStuff() { System.out.print("show book "); }
-	    public static void main(String[] args) {
-	        new Tablet().getPower();
-                new Tablet().doStuff();
-	    }
+	  void doStuff() { System.out.print("show book "); }
+	  public static void main(String[] args) {
+	    new Tablet().getPower();
+            new Tablet().doStuff();
+	  }
         }
-	```
 
     What are true? (Choose all that apply.)
 

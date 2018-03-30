@@ -357,7 +357,7 @@ This is meant to be a 40 days learning streak with a commit per day
 	        void doStuff() { System.out.print("show book "); }
 	        public static void main(String[] args) {
 	            new Tablet().getPower();
-                  new Tablet().doStuff();
+                new Tablet().doStuff();
 	        } 
        }
 

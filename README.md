@@ -347,9 +347,9 @@ This is meant to be a 40 days learning streak with a commit per day
    5. Compilation fails due to an error on line 11
 10. Given:
 
-        interface Gadget {
-	    void doStuff();
-	}
+       interface Gadget {
+       	   void doStuff();
+       }
 
 	abstract class Electronic {
 	        void getPower() { System.out.print("plug in "); }

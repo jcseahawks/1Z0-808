@@ -347,19 +347,19 @@ This is meant to be a 40 days learning streak with a commit per day
    5. Compilation fails due to an error on line 11
 10. Given:
 
-        interface Gadget {
-       	    void doStuff();
-        }
-	abstract class Electronic {
-	    void getPower() { System.out.print("plug in "); }
-	}
-	public class Tablet extends Electronic implements Gadget {
-	    void doStuff() { System.out.print("show book "); }
-	    public static void main(String[] args) {
-	        new Tablet().getPower();
-                new Tablet().doStuff();
-	    }
-        }
+        1. interface Gadget {
+       	2.     void doStuff();
+        3. }
+	4. abstract class Electronic {
+	5.     void getPower() { System.out.print("plug in "); }
+	6. }
+	7. public class Tablet extends Electronic implements Gadget {
+	8.     void doStuff() { System.out.print("show book "); }
+	9.     public static void main(String[] args) {
+	10.        new Tablet().getPower();
+        11.        new Tablet().doStuff();
+	12.    }
+        13. }
 
     What are true? (Choose all that apply.)
 

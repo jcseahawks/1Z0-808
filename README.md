@@ -287,4 +287,22 @@ This is meant to be a 40 days learning streak with a commit per day
    4. Compilation fails with an error on line 5
    5. Compilation fails with an error on line 7
    6. Compilation fails with an error on line 9
+7. Given:
+
+       4. class Announce {
+       5.     public static void main(String[] args) {
+       6.         for(int __x = 0; __x < 3; __x++) ;
+       7.         int #lb = 7;
+       8.         long [] x [5];
+       9.         Boolean []ba[];
+       10.    }
+       11. }
+
+   What is the result? (Choose all that apply.)
+
+   1. Compilation succeeds
+   2. Compilation fails with an error on line 6
+   3. **Compilation fails with an error on line 7**
+   4. **Compilation fails with an error on line 8**
+   5. Compilation fails with an error on line 9
 

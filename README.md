@@ -411,7 +411,7 @@ This is meant to be a 40 days learning streak with a commit per day
     3. **Java provides programmers the ability to create objects that are well encapsulated**
     4. **Java provides programmers the ability to create objects from one machineto another**
     5. Java is an implementation of ECMA standard
-    6. **Java's encapsulation capabilities provide its primary security mechanism**
+    6. Java's encapsulation capabilities provide its primary security mechanism
 
 
 

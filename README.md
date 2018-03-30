@@ -349,8 +349,9 @@ This is meant to be a 40 days learning streak with a commit per day
 
         interface Gadget {
 	    void doStuff();
-	 }
-	    abstract class Electronic {
+	}
+
+	abstract class Electronic {
 	        void getPower() { System.out.print("plug in "); }
 	    }
 	        public class Tablet extends Electronic implements Gadget {

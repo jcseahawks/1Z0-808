@@ -399,12 +399,19 @@ This is meant to be a 40 days learning streak with a commit per day
 
     Which lines of code--inserted independently at <i>insert code here</i>--will compile? (Choose all that apply.)
 
-    1. public static m1() {;}
-    2. **default void m2(){;}**
+    1. public static m1() { ; }
+    2. **default void m2(){ ; }**
     3. **abstract int m3();** 
     4. final short m4() { return 5;}
     5. default long m5();
-    6. **static void m6() {;}**
+    6. **static void m6() { ; }**
+13. Which are true? ( Choose all that apply.)
+    1. Java is dynamically typed programming language
+    2. Java provides fine-grained control of memory through the use of pointers
+    3. **Java provides programmers the ability to create objects that are well encapsulated**
+    4. **Java provides programmers the ability to create objects from one machineto another**
+    5. Java is an implementation of ECMA standard
+    6. **Java's encapsulation capabilities provide its primary security mechanism**
 
 
 

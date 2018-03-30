@@ -243,9 +243,9 @@ This is meant to be a 40 days learning streak with a commit per day
        
        1. package pkgA;
        2. public class Foo {
-       3. int a = 5;
-       4. protected int b = 6;
-       5. public int c = 7;
+       3.     int a = 5;
+       4.     protected int b = 6;
+       5.     public int c = 7;
        6. }
        
        3. package pkgB;
@@ -255,7 +255,16 @@ This is meant to be a 40 days learning streak with a commit per day
        7.         Foo f = new Foo();
        8.         System.out.print(" " + f.a);
        9.         System.out.print(" " + f.b);
-       10.        System.out.println(" " + f.c);
-       11.    }
-       12. }
+      10.         System.out.println(" " + f.c);
+      11.     }
+      12. }
+
+   What is the result? (Choose all that apply.)
+
+   1. 5 6 7
+   2. 5 followed by an exception
+   3. Compilation fails with an error on line 7
+   4. **Compilation fails with an error on line 8**
+   5. **Compilation fails with an error on line 9**
+   6. Compilation fails with an error on line 10
 

@@ -345,4 +345,28 @@ This is meant to be a 40 days learning streak with a commit per day
    3. Compilation fails due to an error on line 6
    4. **Compilation fails due to an error on line 7**
    5. Compilation fails due to an error on line 11
+10. Given:
+
+        interface Gadget {
+	    void doStuff();
+	}
+	abstract class Electronic {
+	    void getPower() { System.out.print("plug in "); }
+	}
+	public class Tablet extends Electronic implements Gadget {
+	    void doStuff() { System.out.print("show book "); }
+	    public static void main(String[] args) {
+	        new Tablet().getPower();
+		new Tablet().doStuff();
+	    }
+	}
+
+    What are true? (Choose all that apply.)
+
+    A. **The class Tablet will NOT compile**
+    B. The interface Gadget will NOT compile
+    C. The output will be <i>plug in show book</i>
+    D. The abstract class Electronic will NOT compile
+    E. The class Tablet CANNOT both extend and implement
+
 

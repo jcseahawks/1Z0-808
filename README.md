@@ -346,7 +346,8 @@ This is meant to be a 40 days learning streak with a commit per day
    4. **Compilation fails due to an error on line 7**
    5. Compilation fails due to an error on line 11
 10. Given:
-
+     
+       ```
        interface Gadget {
            void doStuff()
        }
@@ -360,6 +361,7 @@ This is meant to be a 40 days learning streak with a commit per day
                 new Tablet().doStuff();
 	        } 
        }
+       ```
 
     What are true? (Choose all that apply.)
 

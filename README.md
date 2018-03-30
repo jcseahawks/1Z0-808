@@ -305,4 +305,25 @@ This is meant to be a 40 days learning streak with a commit per day
    3. **Compilation fails with an error on line 7**
    4. **Compilation fails with an error on line 8**
    5. Compilation fails with an error on line 9
+8. Given:
+
+       3. public class TestDays {
+       4.     public enum Days { MON, TUE, WED };
+       5.     public static void main(String[] args) {
+       6.         for(Days d : Days.values() )
+       7.             ;
+       8.         Days [] d2 = Days.values();
+       9.         System.out.println(d2[2]);
+       10.    }
+       11. }
+
+   What is the result? (Choose all that apply.)
+
+   1. TUE
+   2. **WED**
+   3. The output is unpredictable
+   4. Compilation fails due to an error on line 4
+   5. Compilation fails due to an error on line 6
+   6. Compilation fails due to an error on line 8
+   7, Compilation fails due to an error on line 9
 

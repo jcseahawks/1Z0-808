@@ -381,5 +381,14 @@ This is meant to be a 40 days learning streak with a commit per day
       6. }
       ```
 
+    Which, inserted independently at line 1, compiles? (Choose all that apply) 
+
+    1. import static java.lang;
+    2. import static java.lang.Integer;
+    3. **import static java.lang.Integer.*;**
+    4. static import java.lang.Integer.*;
+    5. **import static java.lang.Integer.MAX_VALUE;**
+    6. None of the above statements are valid import syntax
+
 
 

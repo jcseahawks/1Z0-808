@@ -350,16 +350,16 @@ This is meant to be a 40 days learning streak with a commit per day
         interface Gadget {
 	    void doStuff();
 	}
-	abstract class Electronic {
-	    void getPower() { System.out.print("plug in "); }
-	}
-	public class Tablet extends Electronic implements Gadget {
-	    void doStuff() { System.out.print("show book "); }
-	    public static void main(String[] args) {
-	        new Tablet().getPower();
-		new Tablet().doStuff();
+	    abstract class Electronic {
+	        void getPower() { System.out.print("plug in "); }
 	    }
-	}
+	        public class Tablet extends Electronic implements Gadget {
+	            void doStuff() { System.out.print("show book "); }
+	            public static void main(String[] args) {
+	            new Tablet().getPower();
+		    new Tablet().doStuff();
+	            }
+	        }
 
     What are true? (Choose all that apply.)
 

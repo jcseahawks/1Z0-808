@@ -350,11 +350,9 @@ This is meant to be a 40 days learning streak with a commit per day
         interface Gadget {
        	  void doStuff();
         }
-
-	`abstract class Electronic {
+	abstract class Electronic {
 	  void getPower() { System.out.print("plug in "); }
-	}`
-
+	}
 	public class Tablet extends Electronic implements Gadget {
 	  void doStuff() { System.out.print("show book "); }
 	  public static void main(String[] args) {
@@ -365,10 +363,10 @@ This is meant to be a 40 days learning streak with a commit per day
 
     What are true? (Choose all that apply.)
 
-    A. **The class Tablet will NOT compile**
-    B. The interface Gadget will NOT compile
-    C. The output will be <i>plug in show book</i>
-    D. The abstract class Electronic will NOT compile
-    E. The class Tablet CANNOT both extend and implement
+    1. **The class Tablet will NOT compile**
+    2. The interface Gadget will NOT compile
+    3. The output will be <i>plug in show book</i>
+    4. The abstract class Electronic will NOT compile
+    5. The class Tablet CANNOT both extend and implement
 
 

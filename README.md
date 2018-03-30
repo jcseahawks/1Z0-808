@@ -354,8 +354,8 @@ This is meant to be a 40 days learning streak with a commit per day
            void getPower() { System.out.print("plug in "); }
        }
        public class Tablet extends Electronic implements Gadget {
-	    void doStuff() { System.out.print("show book "); }
-	    public static void main(String[] args) {
+	      void doStuff() { System.out.print("show book "); }
+	      public static void main(String[] args) {
 	        new Tablet().getPower();
                 new Tablet().doStuff();
 	    } 

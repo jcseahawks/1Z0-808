@@ -239,3 +239,23 @@ This is meant to be a 40 days learning streak with a commit per day
    4. Compilation fails due to an error on line 3
    5. Compilation fails due to an error on line 4
    6. Compilation fails due to an error on line 9
+5. Given two files:
+       
+       1. package pkgA;
+       2. public class Foo {
+       3. int a = 5;
+       4. protected int b = 6;
+       5. public int c = 7;
+       6. }
+       
+       3. package pkgB;
+       4. import pkgA.*;
+       5. public class Baz {
+       6.     public static void main(String[] args) {
+       7.         Foo f = new Foo();
+       8.         System.out.print(" " + f.a);
+       9.         System.out.print(" " + f.b);
+       10.        System.out.println(" " + f.c);
+       11.    }
+       12. }
+

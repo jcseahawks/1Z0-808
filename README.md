@@ -405,7 +405,7 @@ This is meant to be a 40 days learning streak with a commit per day
     4. final short m4() { return 5;}
     5. default long m5();
     6. **static void m6() { ; }**
-13. Which are true? ( Choose all that apply.)
+13. Which are true? (Choose all that apply.)
     1. Java is dynamically typed programming language
     2. Java provides fine-grained control of memory through the use of pointers
     3. **Java provides programmers the ability to create objects that are well encapsulated**

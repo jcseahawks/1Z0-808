@@ -5,13 +5,21 @@ class Animal {
 		System.out.println("generic noise");
 	}
 }
-class Dog extends Animal {
+class Dog extends Animal implements Pet {
 	void makeNoise() {
 		System.out.println("bark");
 	}
 	void playDead() {
 		System.out.println("roll over");
 	}
+	public void beFriendly() {
+		System.out.println("friendly");
+	} 
+}
+class Beagle extends Dog {
+}
+interface Pet {
+	void beFriendly();
 }
 class CastTest2 {
 	public static void main(String [] args) {
@@ -29,7 +37,13 @@ class CastTest2 {
 class DogTest {
 public static void main(String [] args) {
 	Animal animal = new Animal();
-	// String s = (String) animal; incompatible types: Animal cannot be converted to String
+	// String s = (String) animal; // incompatible types: Animal cannot be converted to String
 	Dog d = (Dog) animal; // compiles but blows up at runtime with java.lang.ClassCastException: Animal cannot be cast to Dog
+	Beagle b = new Beagle();
+	Animal a1 = d; // upcast ok with no explicit cast
+	Animal a2 = (Animal) d; // upcast ok with an explicit cast
+	Pet p = (Pet) animal; // ok but only pet's methods can be invoked
+	Pet p1 = (Pet) b; //ok because Beagle is implicitly a pet through Dog
+
 }
 }

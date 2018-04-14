@@ -27,7 +27,7 @@ class UseAnimals {
 		Horse horseObj = new Horse();
 		ua.doStuff(animalObj);
 		ua.doStuff(horseObj);
-		ua.doStuff(animalRefToHorse);
+		ua.doStuff(animalRefToHorse); // In the Animal version
 		animalObj.eat(); // Generic Animal Eating Generically
 		horseObj.eat(); // Horse eating hay
 		animalRefToHorse.eat(); //Horse eating hay

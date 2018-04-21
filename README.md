@@ -420,5 +420,43 @@ This is meant to be a 40 days learning streak with a commit per day
     * Instance variables are kept protected (usaually with the `private` modifier)
     * Getter and setter methods provide access to instance variables
   * IS-A refers to inheritance or implementation
-  * IS-A is expressed with the keyword `extends` or implements
+  * IS-A is expressed with the keyword `extends` or `implements`
+  * IS-A, "inherits from," and "is subtype of" are all equivalent expressions
+  * HAS-A means an instance of one class "has a" reference to an instance of another class or another instance of the same class. 
+
+### Inheritance
+  * Inheritance allows a type to be a subtype of a supertype and thereby inherit `public` and `protected` variables and methods of the supertype
+  * Inheritance is a key concept that underlies IS-A, polymorphism, overriding, overloading, and casting
+  * All classes (except class Object) are subclasses of type `Object`, and therefore they inherit Object's methods
+
+### Polymorphism
+  * Polymorphism means "many forms"
+  * A reference variable is always of a single, unchangeable type, but it can refer to a subtype object
+  * A single object can be referred to by reference variables of many different types--as long as they are the same type or a supertype of the object
+  * The reference variable's type (not the object's type) determines which methods can be called!
+  * Polymorphic method invocations apply only to overriden instance methods
+
+### Overriding and Overloading
+  * Methods can be overriden or overloaded; constructors can be overloaded but can't be overriden
+  * With respect to the method it overrides, the overriding method
+    * Must have the same argument list
+    * Must have the same return type or a subclass (also known as a covariant return)
+    * Must not have a more restrictive access modifier
+    * May have a less restrictive access modifier
+    * Must not raise new or broader checked exceptions
+    * May throw fewer or narrower checked exceptions, or any unchecked exception
+  * `final` methods cannot be overriden
+  * Only inherited methods may be overridden, and private methods are not inherited
+  * A subclass uses `super.overriddenMethodName()` to call the superclass version of an overriden method
+  * A subclass uses `MyInterface.super.overriddenMethodName()` to call the super interface version on an overridden method
+  * Overloading means reusing a method name but with different arguments
+  * Overloading methods
+    * Must have different argument lists
+    * May have different return types, if argument lists are also different
+    * May have different access modifiers
+    * May throw different exceptions
+  * Methods from a supertype can be overloaded in a subtype
+  * Polymorphism applies to overriding, not to overloading
+  * Object type (not the reference variable's type) determines which overriden method is used at runtime
+  * Reference type determines which overloaded method will be used at compile time
 

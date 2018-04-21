@@ -414,5 +414,11 @@ This is meant to be a 40 days learning streak with a commit per day
     6. Java's encapsulation capabilities provide its primary security mechanism
 
 ## Chapter Two Two-Minute Drill
-
+### Encapsulation, IS-A, HAS-A
+  * Encapsulation helps hide implementation behind an interface (or API)
+  * Encapsulation code has two features:
+    * Instance variables are kept protected (usaually with the `private` modifier)
+    * Getter and setter methods provide access to instance variables
+  * IS-A refers to inheritance or implementation
+  * IS-A is expressed with the keyword `extends` or implements
 

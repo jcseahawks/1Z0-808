@@ -460,3 +460,22 @@ This is meant to be a 40 days learning streak with a commit per day
   * Object type (not the reference variable's type) determines which overriden method is used at runtime
   * Reference type determines which overloaded method will be used at compile time
 
+### Refernce Variable Casting
+  * There are two types of reference variable casting: downcasting and upcasting
+    * Downcasting: If you have a reference variable that refers to a subtype object, you can assign it to a reference variable of the subtype. You must make an explicit cast to do this, and the result is that you can access the subtype's members with this new reference variable
+    * Upcasting: You can assign a reference variable to a supertype refernce variable explicitly or implicitly. This is an inherently safe operation because the assignment restricts the access capabilities of the new variable
+
+### Implementing an Interface
+  * When implementing an interface, you are fulfilling a contract
+  * You implement an interface by properly and concretely implemently all the abstract methods defined by the interface
+  * A single class can implement many interfaces
+
+### Return Types
+  * Overloaded methods can change return types; overridden methods cannot, except in the case of covariant returns
+  * Object refernce return types can accept `null` as return value
+  * An array is a legal return type, both to declare and return as a value
+  * For methods with primitive return types, any value that can be implicitly converted to the return type can be returned
+  * Nothing can be returned from a `void`, but you can return nothing. You're allowed to simply say return in any method with a `void` return type to bust out of a method early. But you can't return nothong from a method with a non-void return type.
+  * Methods with an object reference return type can return a subtype
+  * Methods with an interface return type can return any implementer
+

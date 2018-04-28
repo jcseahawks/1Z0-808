@@ -479,3 +479,15 @@ This is meant to be a 40 days learning streak with a commit per day
   * Methods with an object reference return type can return a subtype
   * Methods with an interface return type can return any implementer
 
+### Constructors and Instantiation
+  * A constructor is always invoked when a new object is created
+  * Each in an object's inheritance tree will have a constructor called
+  * Every class, even abstract class, has at least one constructor
+  * Constructors must have the same name as the class
+  * Constructors don't have a return type. If you see code with a return type, it's a method with same name as the class; it's not a constructor
+  * Typical constructor execution occurs as follows:
+    * The constructor calls its superclass constructor, which calls its superclass constructor, and so on all the way up to the `Object` constructor
+    * The `Object` constructor executes and then returns to the calling constructor, which runs to completion of the constructor of the actual instance being created
+  * Constructors can use any access modifier (even private!)
+  * The compiler will create a default constructor if you don't create any constructors in your class
+

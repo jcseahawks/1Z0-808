@@ -619,9 +619,9 @@ This is meant to be a 40 days learning streak with a commit per day
      }
      class Hawk extends Raptor {
        public static void main(String [] args) {
-	    System.out.print("pre ");
-	    new Hawk();
-	    System.out.println("hawk ");
+	     System.out.print("pre ");
+	     new Hawk();
+	     System.out.println("hawk ");
        }
      }
      ```

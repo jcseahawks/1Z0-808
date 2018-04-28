@@ -542,4 +542,102 @@ This is meant to be a 40 days learning streak with a commit per day
 	      public void twiddle(Integer s) { }
           }**  
 
+  2. Given:
+
+     ```
+     class Top {
+       public Top(String s) { System.out.print("B"); }
+     }
+     public class Bottom2 extends Top {
+       public Bottom2(String s) { System.out.print("D"); }
+       public static void main(String[] args) {
+         new Bottom2("C");
+	 System.out.println(" ");
+       }
+     }  
+     ```
+
+     What is the result?
+
+     1. BD
+     2. DB
+     3. BDC
+     4. DBC
+     5. **Compilation fails**
+
+  3. Given:
+
+     ```
+     class Clidder {
+        private final void flipper() { System.out.println("Clidder"); }
+     }
+     public class Clidlet extends Clidder {
+        public final void flipper() { System.out.println("Clidlet"); }
+	public static void main(String [] args) {
+	   new Clidlet().flipper();
+	}
+     }
+     ```
+
+     What is the result?
+
+     1. **Clidlet**
+     2. Clidder
+     3. Clidder Clidlet
+     4. Clidlet Clidder
+     5. Compilation fails
+        
+  4. Using the fragments below, complete the following code so it compiles. Note that you may not have to fill all of the slots.
+
+     Code: 
+
+     ```
+     class AgedP {
+       AgedP(){ }
+       public AgedP(int x) {
+       } 
+     }
+     public class Kinder extends AgedP {
+       public Kinder(int x) {
+         super();
+       }  
+     }
+     ```
+
+  5. Given:
+
+     ```
+     class Bird {
+         { System.out.print("b1 "); }
+	 public Bird() { System.out.print("b2 "); }
+     }
+     class Raptor extends Bird {
+         static { System.out.print("r1 "); }
+	 public Raptor() { System.out.print("r2 "); }
+	 { System.out.print("r3 "); }
+	 static { System.out.print("r4 "); }
+     }
+     class Hawk extends Raptor {
+         public static void main(String [] args) {
+	    System.out.print("pre ");
+	    new Hawk();
+	    System.out.println("hawk ");
+	 }
+     }
+     ```
+
+     What is the result?
+
+     1. pre b1 b2 r3 r2 hawk
+     2. pre b2 b1 r2 r3 hawk
+     3. pre b2 b1 r2 r3 hawk r1 r4
+     4. **r1 r4 pre b1 b2 r3 r2 hawk**
+     5. r1 r4 pre b2 b1 r2 r3 hawk
+     6. pre r1 r4 b1 b2 r3 r2 hawk
+     7. pre r1 r4 b2 b1 r2 r3 hawk
+     8. The order of output cannot be predicted
+     9. Compilation fails
+     
+
+
     

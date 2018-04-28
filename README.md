@@ -506,7 +506,7 @@ This is meant to be a 40 days learning streak with a commit per day
     * Calls to `this()` and `super()` cannot be in the same constructor. You can have one or the other, but never both
 
 ### Initialization Blocks
-  * Use static init blocks---`static { /* code here */ }---for code you want to have run once, when the class is first loaded. Multiple blocks run from the top down
+  * Use static init blocks---`static { /* code here */ }`---for code you want to have run once, when the class is first loaded. Multiple blocks run from the top down
   * Use normal init blocks---`{ /* code here }`---for code you want to have run for every new instance, right after all the super constructors have run. Again, multiple blocks run from the top of the class down.
 
 ### Statics

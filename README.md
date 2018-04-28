@@ -530,7 +530,7 @@ This is meant to be a 40 days learning streak with a commit per day
      1. public abstract class Frob implements Frobnicate {
           public abstract void twiddle(String s) { }
         }
-     2. `**public abstract class Frob implements Frobnicate { }**`
+     2. **public abstract class Frob implements Frobnicate { }**
      3. public class Frob extends Frobnicate {
           public void twiddle(Integer i) { }
         }
@@ -538,8 +538,8 @@ This is meant to be a 40 days learning streak with a commit per day
           public void twiddle(Integer i) { }
         }  
      5. **public class Frob implements Frobnicate {
-            public void twiddle(String i) { }
-	    public void twiddle(Integer s) { }
-        }**  
+              public void twiddle(String i) { }
+	      public void twiddle(Integer s) { }
+          }**  
 
     

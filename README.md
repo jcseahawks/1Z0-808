@@ -524,7 +524,8 @@ This is meant to be a 40 days learning streak with a commit per day
      ```
      public abstract interface Frobnicate { public void twiddle(String s); }
      ```
-  Which is a correct class? (Choose all that apply.)
+     
+     Which is a correct class? (Choose all that apply.)
 
      1. public abstract class Frob implements Frobnicate {
           public abstract void twiddle(String s) { }

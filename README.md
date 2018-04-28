@@ -521,9 +521,8 @@ This is meant to be a 40 days learning streak with a commit per day
 ## Chapter Two SELF TEST  
   1. Given:
 
-        ```
-        public abstract interface Frobnicate { public void twiddle(String s); }
-        ```
-
-    Which is a correct class? (Choose all that apply.)
+     ```
+     public abstract interface Frobnicate { public void twiddle(String s); }
+     ```
+  Which is a correct class? (Choose all that apply.)
     

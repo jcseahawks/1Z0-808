@@ -516,5 +516,5 @@ This is meant to be a 40 days learning streak with a commit per day
   * A static method can't access an instance variable directly
   * Use the dot operator to access static members, but remember that using a reference variable with the dot operator is really a syntax trick, and the compiler will substitute the class name for the reference variable; for instance: `d.doStuff();` becomes `Dog.doStuff();`
   * To invoke an interface's static method use `MyInterface.doStuff()` syntax
-  * static methods can't be overridden, but they can be redefined.
+  * `static` methods can't be overridden, but they can be redefined.
 

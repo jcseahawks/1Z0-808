@@ -518,3 +518,10 @@ This is meant to be a 40 days learning streak with a commit per day
   * To invoke an interface's static method use `MyInterface.doStuff()` syntax
   * `static` methods can't be overridden, but they can be redefined.
 
+## Chapter Two SELF TEST  
+  1. Given:
+    ```
+       public abstract interface Frobnicate { public void twiddle(String s); }
+    ```
+    Which is a correct class? (Choose all that apply.)
+    

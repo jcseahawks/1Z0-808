@@ -711,4 +711,83 @@ This is meant to be a 40 days learning streak with a commit per day
      4. howl woof followed by an exception
      5. Compilation fails with an error at line 14
      6. **Compilation fails with an error at line 15**
+
+  9. Given:
+
+     ```
+     3. public class Redwood extends Tree {
+     4.   public static void main(String[] args) {
+     5.     new Redwood().go();
+     6.   }
+     7.   void go() {
+     8.     go2(new Tree(), new Redwood());
+     9.     go2((Redwood) new Tree(), new Redwood());
+     10.  }
+     11.  void go2(Tree t1, Redwood r1) {
+     12.    Redwood r2 = (Redwood)t1;
+     13.    Tree t2 = (Tree)r1;
+     14.  }
+     15. }
+     16. class Tree { }
+     ```
+
+     What is the result? (Choose all that apply)
+
+     1. **An exception is thrown at runtime**
+     2. The code compiles and runs with no output
+     3. Compilation fails with an error at line 8
+     4. Compilation fails with an error at line 9
+     5. Compilation fails with an error at line 12
+     6. Compilation fails with an error at line 13
+
+  10. Given:
+
+      ```
+      3. public class Tenor extends Singer {
+      4.   public static String sing() { return "fa"; }
+      5.   public static void main(String[] args) {
+      6.     Tenor t = new Tenor();
+      7.     Singer s = new Tenor();
+      8.     System.out.println(t.sing + " " + s.sing());
+      9.   }
+      10. }
+      11. class Singer { public static String sing() { return "la"; } }
+      ```
+
+      What is the result?
+
+      1. fa fa
+      2. **fa la**
+      3. la la
+      4. Compilation fails
+      5. An exception is thrown at runtime
+
+  11. Given:
+
+      ```
+      3. class Alpha {
+      4.   static String s = " ";
+      5.   protected Alpha() { s += "alpha "; }
+      6. }
+      7. class SubAlpha extends Alpha {
+      8.   private SubAlpha() { s += "sub "; }
+      9. }
+      10. public class SubSubAlpha extends Alpha {
+      11.   private SubSubAlpha() { s += "subsub "; }
+      12.   public static void main(String[] args) {
+      13.     new SubSubAlpha();
+      14.     System.out.println(s);
+      15.   }
+      16. }
+      ```
+
+      What is the result?
+
+      1. subsub
+      2. sub subsub
+      3. **alpha subsub**
+      4. alpha sub subsub
+      5. Compilation fails
+      6. An exception is thrown at runtime
+
     

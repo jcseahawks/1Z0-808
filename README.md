@@ -661,6 +661,25 @@ This is meant to be a 40 days learning streak with a commit per day
      3. **((Y)x2).do2();**
      4. None of the above statement will compile
      
+  7. Given: 
 
+     ```
+     public class Locomotive {
+       Locomotive() { main("hi");}
+       public static void main(String [] args) {
+         System.out.print("2 ");
+       }
+       public static void main(String args) {
+         System.out.print("3 " + args);
+       }
+     }
+     ```
+     
+     What is the result? (Choose all that apply)
 
+     1. **2 will be included in the output**
+     2. 3 will be included in the output
+     3. hi will be included in the output
+     4. Compilation fails
+     5. An exception is thrown at runtime
     

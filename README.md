@@ -637,6 +637,29 @@ This is meant to be a 40 days learning streak with a commit per day
      7. pre r1 r4 b2 b1 r2 r3 hawk
      8. The order of output cannot be predicted
      9. Compilation fails
+
+  6. Given the following:
+
+     ```
+     1. class X { void do1() { } }
+     2. class Y extends X { void do2() { } }
+     3. 
+     4. class Chrome {
+     5.   public static void main(String [] args) {
+     6.     X x1 = new X();
+     7.     X x2 = new Y();
+     8.     Y y1 = new Y();
+     9.     // insert code here
+     10.  } 
+     11. }
+     ```
+
+     Which of the following, inserted at line 9, will compile? (Choose all that apply.)
+
+     1. x2.do2();
+     2. (Y)x2.do2();
+     3. **((Y)x2).do2();**
+     4. None of the above statement will compile
      
 
 

@@ -682,4 +682,33 @@ This is meant to be a 40 days learning streak with a commit per day
      3. hi will be included in the output
      4. Compilation fails
      5. An exception is thrown at runtime
+
+  8. Given:
+
+     ```
+     3. class Dog {
+     4.   public void bark() { System.out.print("woof "); }
+     5. }
+     6. class Hound extends Dog {
+     7.   public void sniff() { System.out.print("sniff "); }
+     8.   public void bark() { System.out.print("howl "); }
+     9. }
+     10. public class DogShow {
+     11.   public static void main(String[] args) { new DogShow().go(); }
+     12.   void go() {
+     13.      new Hound().bark();
+     14.      ((Dog) new Hound()).bark();
+     15.      ((Dog) new Hound()).sniff();
+     16.   }
+     17. }
+     ```
+
+     What is the result? (Choose all that apply)
+
+     1. howl howl sniff
+     2. howl woof sniff
+     3. howl howl followed by an exception
+     4. howl woof followed by an exception
+     5. Compilation fails with an error at line 14
+     6. **Compilation fails with an error at line 15**
     

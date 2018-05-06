@@ -932,7 +932,7 @@ This is meant to be a 40 days learning streak with a commit per day
 
        1. **System.out.println("class: " + doStuff());**
        2. System.out.println("iface: " + super.doStuff());
-       3. System.out.println("iface: " + MyInterface.super.doStuff());
+       3. **System.out.println("iface: " + MyInterface.super.doStuff());**
        4. System.out.println("iface: " + MyInterface.doStuff());
        5. System.out.println("iface: " + super.MyInterface.doStuff());
        6. None of the lines, A-E will allow the code to compile

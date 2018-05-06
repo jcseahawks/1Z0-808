@@ -843,5 +843,69 @@ This is meant to be a 40 days learning streak with a commit per day
       5. Compilation fails
       6. An exception is thrown at runtime
 
+   14. Given:
+
+       ```
+       1. interface FrogBoilable {
+       2.   static int getCtoF(int cTemp) {
+       3.     return (cTemp * 9 / 5) + 32;
+       4.   }
+       5.   default String hop() { return "hopping "; }
+       6. }
+       7. public class DontBoilFrogs implements FrogBoilable {
+       8.   public static void main(String[] args) {
+       9.     new DontBoilFrogs().go();
+       10.  }
+       11.  void go() {
+       12.    System.out.println(hop());
+       13.    System.out.println(getCtoF(100));
+       14.    System.out.println(FrogBoilable.getCtoF(100));
+       15.    DontBoilFrogs dbf = new DontBoilFrogs();
+       16.    System.out.println(dbf.getCtoF(100));
+       17.  }
+       18. }
+       ```
+
+       What is the result? (Choose all that apply)
+
+       1. hopping 212
+       2. Compilation fails due to an error on line 2
+       3. Compilation fails due to an error on line 5
+       4. Compilation fails due to an error on line 12
+       5. **Compilation fails due to an error on line 13**
+       6. Compilation fails due to an error on line 14
+       7. **Compilation fails due to an error on line 16**
+
+   15. Given:
+
+       ```
+       interface I1 {
+          default int doStuff() { return 1; }
+       }
+       interface I2 {
+          default int doStuff() { return 2; }
+       }
+       public class MultiInt implements I1, I2 {
+          public static void main(String[] args) {
+	     new MultiInt().go();
+	  }
+	  void go() {
+	    System.out.println(doStuff());
+	  }
+	  int doStuff() {
+	    return 3;
+	  }
+       }
+       ```
+
+       What is the result?
+
+       1. 1
+       2. 2
+       3. 3
+       4. The output is unpredictable
+       5. **Compilation fails**
+       6. An exception is thrown at runtime
+
 
     

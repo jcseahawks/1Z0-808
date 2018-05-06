@@ -790,4 +790,58 @@ This is meant to be a 40 days learning streak with a commit per day
       5. Compilation fails
       6. An exception is thrown at runtime
 
+  12. Given:
+
+      ```
+      3. class Deer {
+      4.   public Deer() { System.out.println("Deer "); }
+      5.   public Deer(int age) { System.out.println("DeerAge "); }
+      6.   private boolean hasHorns() { return false; }
+      7.   public static void main(String[] args) {
+      8.     Deer deer = new ReinDeer(5);
+      9.     System.out.println(", " + deer.hasHorns()); 
+      10. }
+      11. class ReinDeer extends Deer {  
+      12.   public ReinDeer(int age) { System.out.println("ReinDeer "); }
+      13.   public boolean hasHorns() { return true; }
+      14. }
+      ```
+
+      What is the result?
+
+      1. **Deer ReinDeer, false**
+      2. Deer ReinDeer, true
+      3. Compilation fails
+      4. An exception is thrown at runtime
+
+  13. Given:
+
+      ```
+      3. class Mammal {
+      4.   String name = "furry ";
+      5.   String makeNoise() { return "generic noise"; }
+      6. }
+      7. class Zebra extends Mammal {
+      8.   String name = "stripes ";
+      9.   String makeNoise() { return "bray"; }
+      10. }
+      11. public class ZooKeeper {
+      12.   public static void main(String[] args) { new ZooKeeper().go(); }
+      13.   void go() {
+      14.     Mammal m = new Zebra();
+      15.     System.out.println(m.name + m.makeNoise());
+      16.   }
+      17. }
+      ```
+      
+      What is the result?
+
+      1. **furry bray**
+      2. stripes bray
+      3. furry generic noise
+      4. stripes generic noise
+      5. Compilation fails
+      6. An exception is thrown at runtime
+
+
     

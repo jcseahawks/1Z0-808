@@ -879,23 +879,23 @@ This is meant to be a 40 days learning streak with a commit per day
    15. Given:
 
        ```
-       interface I1 {
-         default int doStuff() { return 1; }
-       }
-       interface I2 {
-         default int doStuff() { return 2; }
-       }
-       public class MultiInt implements I1, I2 {
-         public static void main(String[] args) {
-	   new MultiInt().go();
-	 }
-	 void go() {
-	   System.out.println(doStuff());
-	 }
-	 int doStuff() {
-	   return 3;
-	 }
-       }
+       1. interface I1 {
+       2.  default int doStuff() { return 1; }
+       3. }
+       4. interface I2 {
+       5.  default int doStuff() { return 2; }
+       6. }
+       7. public class MultiInt implements I1, I2 {
+       8.  public static void main(String[] args) {
+       9.    new MultiInt().go();
+       10. }
+       11. void go() {
+       12.   System.out.println(doStuff());
+       13. }
+       14. int doStuff() {
+       15.   return 3;
+       16.  }
+       17. }
        ```
 
        What is the result?

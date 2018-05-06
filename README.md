@@ -907,5 +907,35 @@ This is meant to be a 40 days learning streak with a commit per day
        5. **Compilation fails**
        6. An exception is thrown at runtime
 
+   16. Given:
+
+       ```
+       1. interface MyInterface {
+       2.   default int doStuff() {
+       3.     return 42;
+       4.   }
+       5. }
+       6. public class IfaceTest implements MyInterface {
+       7.   public static void main(String[] args) {
+       8.     new IfaceTest().go();
+       9.   }
+       10.  void go() {
+       11.    // INSERT CODE HERE
+       12.  }
+       13.  public int doStuff() {
+       14.    return 43;
+       15.  }
+       16 }
+       ```
+
+       Which line(s) ofcode, inserted independently at // INSERT CODE HERE. will allow the code to compile? (Choose all that apply)
+
+       1. **System.out.println("class: " + doStuff());**
+       2. System.out.println("iface: " + super.doStuff());
+       3. System.out.println("iface: " + MyInterface.super.doStuff());
+       4. System.out.println("iface: " + MyInterface.doStuff());
+       5. System.out.println("iface: " + super.MyInterface.doStuff());
+       6. None of the lines, A-E will allow the code to compile
+
 
     

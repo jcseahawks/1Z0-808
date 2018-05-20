@@ -1,4 +1,4 @@
-package tk.jcseahawks.ocja.day_nineteen.chapter_three;
+package tk.jcseahawks.ocja.day_nineteen.chapterthree;
 // Sun May 20 12:52:15 EDT 2018
 class Collar { }
 class Dog {

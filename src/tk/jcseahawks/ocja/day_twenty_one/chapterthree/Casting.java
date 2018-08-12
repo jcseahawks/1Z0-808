@@ -8,6 +8,6 @@ class Casting {
 	//	int x = 3957.229;  // illegal
 		int x = (int)3957.229;  // legal
 		System.out.println("The byte is " + b);
-	//	System.out.println("int x is " + x);
+	//	System.out.println("Integer x is " + x);
 	}
 }
